@@ -2,7 +2,7 @@ using namespace std;
 
 class AnimalsInZoo{
 public:
-AnimalsInZoo(Animal animal);
+AnimalsInZoo(Animal animalP);
 AnimalsInZoo():numAnimals(0){};
 void display();
 

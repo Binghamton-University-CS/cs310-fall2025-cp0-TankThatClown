@@ -1,14 +1,17 @@
 #include <iostream>
 #include <stdlib.h>
 #include "Animal.h"
+#include "AnimalsInZoo.h"
 using namespace std;
 
-AnimalsInZoo::AnimalsInZoo(Animal* animal){
+AnimalsInZoo::AnimalsInZoo(Animal animalP){
 numAnimals=1;
-this.animal=animal;
+animal=animalP;
 }
 
 void AnimalsInZoo::display(){
-	cout << species << " [" <<numAnimals << "]" << endl;
-	if(animal!=null){animal->display();}
+	cout << numAnimals << endl;
+	if(numAnimals==1){
+		animal.display();
+	}
 }
